@@ -1,0 +1,22 @@
+import copy from 'rollup-plugin-copy';
+
+import config from './config';
+import { main as outputFile } from './package.json';
+
+const customConfig = () => {
+  const baseConfig = config(outputFile);
+
+  return {
+    ...baseConfig,
+    plugins: [
+      ...baseConfig.plugins,
+      copy({
+        targets: {
+          'src/schemas/generated': 'dist/lib/schemas/generated',
+        },
+      }),
+    ],
+  };
+};
+
+export default customConfig();
