@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+/**
+ * Map of all Contentful marks.
+ */
+exports.default = {
+    BOLD: 'bold',
+    ITALIC: 'italic',
+    UNDERLINE: 'underline',
+    CODE: 'code',
+    SUPERSCRIPT: 'superscript',
+    SUBSCRIPT: 'subscript',
+};
+//# sourceMappingURL=marks.js.map

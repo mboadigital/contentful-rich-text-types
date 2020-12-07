@@ -36,7 +36,5 @@
 # dotenv environment variables file
 **/.env
 
-**/dist
-
 **/.rpt2_cache
 .vscode/settings.json
